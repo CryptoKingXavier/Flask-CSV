@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<section class="center">
+    <form action="{{ url_for('views.signup') }}" method="post">
+        <input type="text" value="Anonymous" name="name" placeholder="Full Name" required>
+        <input type="number" value="20" name="age" min="18" max="25" step="1" placeholder="Age" required>
+        <input type="text" value="10023478GD" name="reg_no" placeholder="Registration Number" required>
+        <input type="email" value="test@gmail.com" name="email" placeholder="Email Address" required>
+        <input type="password" value="5550123" name="password" placeholder="Password" required>
+        <input type="submit">
+    </form>
+</section>
+{% endblock body %}

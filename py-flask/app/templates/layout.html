@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    {% if title %}
+        <title>{{ title }}</title>
+    {% else %}
+        <title>Hello, World 🌍</title>
+    {% endif %}
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 2rem;
+            background-color: snow;
+        }
+
+        section {
+            height: fit-content;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: auto;
+            width: 75%;
+            text-align: center;
+            padding: 10px;
+            border: 1px solid teal;
+            border-radius: 15px;
+            box-shadow: 3px 4px 10px 3px lightgray;
+        }
+
+        input {
+            text-align: center;
+            font-style: italic;
+            color: crimson;
+            border: .5px dotted gold;
+            padding: 5px;
+            border-radius: 5px;
+            width: 50%;
+            margin: auto;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        input[type="submit"] {
+            width: fit-content;
+            padding: 5px;
+            margin: auto;
+            font-weight: bolder;
+            background-color: snow;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 75%;
+            box-shadow: 3px 4px 10px 3px lightgray;
+            padding: 5px;
+            margin: auto;
+            border: 1px solid teal;
+            border-radius: 15px;
+            font-style: italic;
+        }
+
+        th, td {
+            padding: 10px;
+            color: burlywood;
+            font-weight: bolder;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+        }
+    </style>      
+</head>
+<body>
+    {% block body %}{% endblock body %}
+</body>
+</html>

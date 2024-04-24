@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<section class="center">
+    <table>
+        {% for key, value in data.items() %}
+            <tr>
+                <th>{{ key }}</th>
+                <td>{{ value }}</td>
+            </tr>
+        {% endfor %}
+    </table>        
+</section>
+{% endblock body %}
